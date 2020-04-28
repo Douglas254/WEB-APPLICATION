@@ -119,6 +119,21 @@ header a:hover{
 #boxes img{
   width: 90px;
 }
+
+/* aside sidebar*/
+aside#sidebar{
+  float:right;
+  width:35%;
+  margin-top:10px;
+  background-color: #000000;
+  color:#ffffff;
+  padding-left:15px;
+  border:5px solid rgb(0,0,255);
+}
+.main-col{
+  float:left;
+  width:60%;
+}
 footer{
   padding:20px;
   margin-top:20px;
