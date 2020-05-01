@@ -134,6 +134,20 @@ aside#sidebar{
   float:left;
   width:60%;
 }
+ #frm{
+  background-color:black;
+  width: 20%;
+  color: white;
+  padding: 16px;
+  margin-top: 16px;
+}
+#btn{
+  align-content: center;
+}
+#btn:hover{
+  background: blue;
+  color: white;
+}
 footer{
   padding:20px;
   margin-top:20px;
