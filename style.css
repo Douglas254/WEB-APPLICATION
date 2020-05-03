@@ -134,18 +134,24 @@ aside#sidebar{
   float:left;
   width:60%;
 }
+/* Form */
  #frm{
   background-color:black;
   width: 20%;
   color: white;
-  padding: 16px;
+  padding: 16px 16px 32px 16px;
   margin-top: 16px;
 }
+#frm:hover{
+  opacity: .9;
+}
 #btn{
-  align-content: center;
+  float:right;
+  border:none;
+  padding:4px;
 }
 #btn:hover{
-  background: blue;
+  background: green;
   color: white;
 }
 footer{
