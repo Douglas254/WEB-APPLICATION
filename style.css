@@ -171,8 +171,12 @@ aside#sidebar{
 }
  aside#contact{
   float:right;
-  width: 40%;
+  width: 25%;
   padding-top: 50px;
+}
+.frame{
+  margin-top: 30px;
+  margin-left: 20px;
 }
 /* vertical line */
 .vl{
@@ -181,6 +185,18 @@ aside#sidebar{
   position: absolute;
   left: 59%;
   margin-top: 20px;
+}
+/* animation of the image link */
+.linkimg:hover{
+  animation: shake 0.5s;
+  border-radius: 50%;
+}
+.linkimg{
+  border-radius: 45%;
+}
+.lnk{
+  font-size: 16px;
+  color: blue;
 }
 /* Dropdown*/
 .dropdown {
@@ -223,11 +239,65 @@ aside#sidebar{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* center websites gallery*/
+.main{
+  max-width: 1250px;
+  margin: auto;
+  background-color: #ffffff;
+  padding-left: 30px;
+}
+.main h1{
+  font-size: 50px;
+  word-break: break-all;
+  text-transform: uppercase;
+  color: rgba(0,255,0,0.9);
+  padding-top: 20px;
+  margin-top: 0px;
+}
+.main h1:hover{
+  color:rgb(174,132,29);
+  animation: bounce 0.5s;
+  animation-iteration-count: infinite;
+}/*
+.row{
+  margin:8px -16px;
+}
+/*  Add padding BETWEEN each column*//*
+.row,
+.row > .column{
+  padding:8px;
+}
+/* create four equal columns that floats next to each other *//*
+.column{
+  float:left;
+  width:25%;
+}
+/* clear floats after rows *//*
+.row:after{
+  content: "";
+  display:table;
+  clear:both;
+}
+/* content *//*
+.content{
+  background-color: blue;
+  padding:10px;
+}
+@ @media screen and (max-width:600px) {
+  .column{
+    width:50%;
+  }
+}
+@@media screen and (max-width:600px) {
+  .column{
+    width:100%;
+  }
+}
+*/
 footer{
   padding:20px;
   margin-top:20px;
   text-align: center;
   background-color: #e8491d;
   color: #ffffff;
-
 }
