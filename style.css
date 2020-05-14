@@ -30,7 +30,7 @@ ul{
 
 /* header */
 header{
-  background:#35424a;
+  background:#000000;
   color: #ffffff;
   padding-top: 30px;
   min-height: 70px;
@@ -258,42 +258,7 @@ aside#sidebar{
   color:rgb(174,132,29);
   animation: bounce 0.5s;
   animation-iteration-count: infinite;
-}/*
-.row{
-  margin:8px -16px;
 }
-/*  Add padding BETWEEN each column*//*
-.row,
-.row > .column{
-  padding:8px;
-}
-/* create four equal columns that floats next to each other *//*
-.column{
-  float:left;
-  width:25%;
-}
-/* clear floats after rows *//*
-.row:after{
-  content: "";
-  display:table;
-  clear:both;
-}
-/* content *//*
-.content{
-  background-color: blue;
-  padding:10px;
-}
-@ @media screen and (max-width:600px) {
-  .column{
-    width:50%;
-  }
-}
-@@media screen and (max-width:600px) {
-  .column{
-    width:100%;
-  }
-}
-*/
 footer{
   padding:20px;
   margin-top:20px;
