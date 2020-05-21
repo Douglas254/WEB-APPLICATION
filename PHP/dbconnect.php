@@ -1,7 +1,7 @@
 <?php
 $host="localhost";//hosting server address
 $username="root";//The username of the hosting server
-$password="omwandoh@1997";//The password of the hosting web server
+$password="";//The password of the hosting web server
 $dbname="newsletter";//The name of the database to be connected.
 //declare the variable to store the connection
 $email=filter_input(INPUT_POST,'email');
