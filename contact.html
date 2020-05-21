@@ -92,18 +92,22 @@
                                <option value="Nyamira">Nyamira</option>
                                <option value="Nairobi">Nairobi</option>
                    </select><br><br>
-                   <label for="campus">Campus:</label> <input type="radio" name="campo" >Main Campus <input type="radio" name="campo">Town Campus <br><br>
-                   <label for="programs">Programme:</label> <select class="" name="selectprogramme">
+                   <label for="campus">Campus:</label> <input type="radio" name="campo" checked>Main Campus <input type="radio" name="campo">Town Campus <br><br>
+                   <label for="programs">Programme:</label>
+                   <select id="selct1" name="selct1" onchange="populate('selct1','selct2')">
                      <option value=""></option>
+                     <option value="doctorofphilosophy">Doctor of Philosophy (PhD)</option>
                      <option value="masters">Masters</option>
                      <option value="degree">Degree</option>
                      <option value="diploma">Diploma</option>
                      <option value="certificate">Certificate</option>
-                   </select>
-                  <button type="button" name="btn" id="btn">Submit</button>
+                   </select><br><br>
+                      <label for="school">School: </label> <select id="selct2" name="selct2" onchange="department('selct2','select3')"></select><br><br>
+                      <label for="department:">Department:</label> <select id="select3" name="select3"></select><br><br>
+                  <button type="button" name="btn" id="btn">Submit</button
               </form>
               </div>
-              <iframe src="index.html" width="500px" height="600px" class="frame"></iframe>
+              <iframe src="index.html" width="450px" height="800px" class="frame"></iframe>
 
               <aside id="contact">
                 <h1>CONTACT INFO</h1>
@@ -118,6 +122,7 @@
      </section>
 
      <footer>
+      <p>Kabarak University, 00100,Nakuru,Kenya | Phone: +254742608717 | Email: douglasobara97@gmail.com</p>
        <p>Douglas Web Design &copy;2020</p>
      </footer>
   </body>

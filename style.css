@@ -13,28 +13,19 @@ body{
   margin: auto;
   overflow: hidden;
 }
-
-.button_1{
-  margin-left:1px;
-  padding:9px;
-  border: 0;
-  background:#e8491d;
-  color: #ffffff;
-}
-
 /* By default ul has a padding // so set to zero*/
 ul{
   padding:0;
   margin:0;
 }
 
-/* header */
+/*--HEADER--*/
 header{
   background:#000000;
   color: #ffffff;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: #e8491d 3px solid;
+  border-bottom: #2d1985 3px solid;
 }
 
 header a{
@@ -69,7 +60,9 @@ header a:hover{
   color:#cccccc;
   font-weight:bold;
 }
+/*--END HEADER--*/
 
+/*--INDEX--*/
 /* Showcase */
 #showcase{
   min-height: 400px;
@@ -88,14 +81,12 @@ header a:hover{
 #showcase:hover{
   opacity: .9;
 }
-
 /* Newsletter*/
 #newsletter{
   color:#ffffff;
   padding:16px;
   background:#35424a;
 }
-
 #newsletter h1{
   float: left;
 }
@@ -108,7 +99,13 @@ header a:hover{
   height:25px;
   width: 250px;
 }
-
+.button_1{
+  margin-left:1px;
+  padding:9px;
+  border: 0;
+  background:#e8491d;
+  color: #ffffff;
+}
 /* Boxes */
 #boxes{
   margin-top: 20px;
@@ -122,8 +119,23 @@ header a:hover{
 #boxes img{
   width: 90px;
 }
+/*--END INDEX--*/
+
+/*--ABOUT--*/
 
 /* aside sidebar*/
+.main-col{
+  float:left;
+  width:60%;
+}
+/* vertical line */
+.vl{
+  border: 1px solid grey;
+  height: 310px;
+  position: absolute;
+  left: 59%;
+  margin-top: 20px;
+}
 aside#sidebar{
   float:right;
   width:35%;
@@ -133,15 +145,59 @@ aside#sidebar{
   padding-left:15px;
   border:5px solid rgba(0,0,255,0.5);
 }
-.main-col{
-  float:left;
-  width:60%;
+.lnk{
+  font-size: 16px;
+  color: rgb(0, 0, 255);
 }
-/* Form */
+/* animation of the image link */
+.imglink:hover{
+  animation: shake 0.5s;
+  border-radius: 50%;
+}
+.imglink{
+  border-radius: 45%;
+}
 
- #frm{
-  background-color:black;
+/*--END ABOUT--*/
+
+/*--SERVICES--*/
+/*--END SERVICES--*/
+
+/*--PROJECT--*/
+/*--END PROJECT--*/
+
+/*--GALLERY--*/
+/* center websites gallery*/
+.main{
+  max-width: 1250px;
+  margin: auto;
+  background-color: #ffffff;
+  padding-left: 30px;
+}
+.main h1{
+  font-size: 50px;
+  word-break: break-all;
+  text-transform: uppercase;
+  color: rgba(0,255,0,0.9);
+  padding-top: 20px;
+  margin-top: 0px;
+}
+.main h1:hover{
+  color:rgb(174,132,29);
+  animation: bounce 0.5s;
+  animation-iteration-count: infinite;
+}
+.content{
+  float: right;
   width: 30%;
+}
+
+/* --END GALLERY-- */
+
+/* --CONTACT--*/
+#frm{
+  background-color:black;
+  width: 33%;
   color: white;
   padding: 16px 16px 32px 16px;
   margin-top: 16px;
@@ -167,7 +223,7 @@ aside#sidebar{
 }
 #frm form{
   border:3px double white;
-  padding:20px 20px 35px 20px;
+  padding:20px 60px 35px 20px;
 }
  aside#contact{
   float:right;
@@ -178,91 +234,14 @@ aside#sidebar{
   margin-top: 30px;
   margin-left: 20px;
 }
-/* vertical line */
-.vl{
-  border: 1px solid grey;
-  height: 310px;
-  position: absolute;
-  left: 59%;
-  margin-top: 20px;
-}
-/* animation of the image link */
-.linkimg:hover{
-  animation: shake 0.5s;
-  border-radius: 50%;
-}
-.linkimg{
-  border-radius: 45%;
-}
-.lnk{
-  font-size: 16px;
-  color: blue;
-}
-/* Dropdown*/
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
 
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+/*--END CONTACT--*/
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-/* center websites gallery*/
-.main{
-  max-width: 1250px;
-  margin: auto;
-  background-color: #ffffff;
-  padding-left: 30px;
-}
-.main h1{
-  font-size: 50px;
-  word-break: break-all;
-  text-transform: uppercase;
-  color: rgba(0,255,0,0.9);
-  padding-top: 20px;
-  margin-top: 0px;
-}
-.main h1:hover{
-  color:rgb(174,132,29);
-  animation: bounce 0.5s;
-  animation-iteration-count: infinite;
-}
+/*--FOOTER--*/
 footer{
   padding:20px;
   margin-top:20px;
   text-align: center;
-  background-color: #e8491d;
+  background-color: #35130a;
   color: #ffffff;
 }

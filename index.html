@@ -7,9 +7,11 @@
     <title>Welcome &ndash; Douglas Web Design</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="link/animate.css">
-    <script src="Script\javascript.js" charset="utf-8"></script>
+      <script src="Script\javascript.js" charset="utf-8"></script>
   </head>
   <body>
+  <!-- PhP external connect -->
+    <?php include 'PHP\dbconnect.php' ?>
      <header>
        <div class="container">
          <div id="branding">
@@ -39,8 +41,8 @@
      <section id="newsletter">
        <div class="container bounce animated">
          <h1>Subscribe To Our Newsletter</h1>
-         <form>
-           <input type="email" placeholder="Enter Email...">
+         <form action="PHP\dbconnect.php" method="post">
+           <input type="email" placeholder="Enter Email..." autocomplete="off" name="email">
            <button type="submit" class="button_1">Subscribe</button>
          </form>
        </div>
@@ -69,7 +71,9 @@
      </section>
 
      <footer>
+       <p>Kabarak University, 00100,Nakuru,Kenya | Phone: +254742608717 | Email: douglasobara97@gmail.com</p>
        <p>Douglas Web Design &copy;2020</p>
      </footer>
+
   </body>
 </html>
